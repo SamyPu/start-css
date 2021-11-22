@@ -63,6 +63,7 @@ nav span {
     text-transform: capitalize;
     font-size: 18px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 /* SECTION 1 END */
@@ -73,13 +74,19 @@ nav span {
     flex-direction: column;
     align-items: center;
 }
+.section-portfolio div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .section-portfolio h2 {
     color: #2C3E50;
     font-size: 35px;
     text-transform: uppercase;
 }
 .section-portfolio img {
-    width: 280px;
+    width: 26%;
+    min-width: 250px;
     border-radius: 10px;
     margin: 15px;
 }
@@ -105,7 +112,7 @@ nav span {
     color: white;
     font-size: 14px;
     line-height: 23px;
-    width: 300px;
+    width: 280px;
     margin: 20px 20px;
 }
 
@@ -163,6 +170,7 @@ nav span {
 
 .footer-row {
     display: flex;
+    flex-wrap: wrap;
     background-color: #2C3E50;
     justify-content: center;
     padding: 30px 0px;
@@ -218,3 +226,17 @@ footer span {
 }
 
 /* FOOTER END */
+
+@media (max-width: 576px) {
+    nav ul li a {
+        font-size: 10px;
+        margin: 5px 5px;
+    }
+    .contact-me form {
+        width: 300px;
+    }
+    .section-about div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
